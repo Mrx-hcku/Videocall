@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - Video Call App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Online Users</h3>
+    <div id="onlineUsers"></div>
+
+    <h3>Call History</h3>
+    <div id="callHistory"></div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    initHome();
+  </script>
+</body>
+</html>
